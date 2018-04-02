@@ -16,4 +16,8 @@ public interface License {
 
     @Nullable
     String getUrl();
+
+    default boolean equals(@Nullable final License license) {
+        return
+    }
 }

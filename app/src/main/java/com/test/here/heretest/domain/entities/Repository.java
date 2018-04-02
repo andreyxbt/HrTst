@@ -151,4 +151,8 @@ public interface Repository {
     long getWatchersCount();
 
     */
+
+    default boolean equals(@Nullable final Repository license) {
+        return
+    }
 }

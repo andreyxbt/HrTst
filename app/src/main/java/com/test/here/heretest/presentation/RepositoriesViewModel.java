@@ -15,7 +15,7 @@ import com.flixbus.flixbustest.domain.interactor.ArrivalsInteractor;
 
 import io.reactivex.disposables.Disposable;
 
-public class ArrivalsViewModel extends ViewModel {
+public class RepositoriesViewModel extends ViewModel {
 
     @NonNull
     private final ArrivalsInteractor arrivalsInteractor;
@@ -30,7 +30,7 @@ public class ArrivalsViewModel extends ViewModel {
     @Nullable
     private LiveData<PagedList<Arrival>> arrivals;
 
-    public ArrivalsViewModel() {
+    public RepositoriesViewModel() {
         updating = new MutableLiveData<>();
         arrivalsInteractor = new ArrivalsInteractor(FlixbusApp.getInstance().getRepository());
         connectionStatus = new MutableLiveData<>();

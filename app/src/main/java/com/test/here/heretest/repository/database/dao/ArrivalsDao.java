@@ -8,12 +8,12 @@ import android.arch.persistence.room.Query;
 
 @Dao
 public interface ArrivalsDao {
-    @Query("SELECT * FROM arrivals")
-    DataSource.Factory<Integer, ArrivalDBEntity> getAllDataSource();
+    @Query("SELECT * FROM RepositoryDBEntity")
+    DataSource.Factory<Integer, RepositoryDBEntity> getAllDataSource();
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
-    void insertAll(ArrivalDBEntity... arrivals);
+    void insertAll(RepositoryDBEntity... arrivals);
 
-    @Query("DELETE FROM arrivals")
+    @Query("DELETE FROM RepositoryDBEntity")
     void deleteAll();
 }

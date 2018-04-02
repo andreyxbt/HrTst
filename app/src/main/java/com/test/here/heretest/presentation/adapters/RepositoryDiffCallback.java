@@ -6,12 +6,12 @@ import android.support.v7.recyclerview.extensions.DiffCallback;
 import com.flixbus.flixbustest.domain.entities.Ride;
 import com.flixbus.flixbustest.domain.eqality.RideEqualitator;
 
-public class RideDiffCallback<T extends Ride> extends DiffCallback<T> {
+public class RepositoryDiffCallback<T extends Ride> extends DiffCallback<T> {
 
     @NonNull
     private final RideEqualitator<T> equalitator;
 
-    public RideDiffCallback(@NonNull final RideEqualitator<T> equalitator) {
+    public RepositoryDiffCallback(@NonNull final RideEqualitator<T> equalitator) {
         this.equalitator = equalitator;
     }
 

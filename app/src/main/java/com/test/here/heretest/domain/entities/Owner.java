@@ -48,4 +48,8 @@ public interface Owner {
     String getType();
 
     boolean isSiteAdmin();
+
+    default boolean equals(@Nullable final Owner license) {
+        return
+    }
 }

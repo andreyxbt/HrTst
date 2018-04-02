@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/HERETest.iml" filepath="$PROJECT_DIR$/HERETest.iml" />
+      <module fileurl="file://C:\development\HereTest\HERETest.iml" filepath="C:\development\HereTest\HERETest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/HereTest.iml" filepath="$PROJECT_DIR$/HereTest.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://C:\development\HereTest\app\app.iml" filepath="C:\development\HereTest\app\app.iml" />
     </modules>
   </component>
 </project>

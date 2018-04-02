@@ -13,10 +13,11 @@ import android.widget.TextView;
 import com.flixbus.flixbustest.R;
 import com.flixbus.flixbustest.domain.entities.Ride;
 import com.flixbus.flixbustest.presentation.DateHelper;
+import com.test.here.heretest.domain.entities.Repository;
 
-public class RideAdapter<T extends Ride> extends PagedListAdapter<T, RideAdapter.ViewHolder> {
+public class RepositoryAdapter<T extends Repository> extends PagedListAdapter<T, RepositoryAdapter.ViewHolder> {
 
-    public RideAdapter(@NonNull final DiffCallback<T> diffCallback) {
+    public RepositoryAdapter(@NonNull final DiffCallback<T> diffCallback) {
         super(diffCallback);
     }
 
@@ -28,9 +29,9 @@ public class RideAdapter<T extends Ride> extends PagedListAdapter<T, RideAdapter
 
     @Override
     public void onBindViewHolder(@NonNull final ViewHolder holder, final int position) {
-        final T ride = getItem(position);
-        if (ride != null) {
-            holder.bindTo(ride, position);
+        final T repository = getItem(position);
+        if (repository != null) {
+            holder.bindTo(repository, position);
         } else {
             holder.clear();
         }
@@ -61,7 +62,7 @@ public class RideAdapter<T extends Ride> extends PagedListAdapter<T, RideAdapter
             rootView = itemView;
         }
 
-        private void bindTo(@NonNull final Ride ride, final int position) {
+        private void bindTo(@NonNull final Repository ride, final int position) {
             positionView.setText(String.valueOf(position));
             direction.setText(ride.getDirection());
             lineNumber.setText(ride.getLineNumber());
